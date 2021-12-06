@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('init') {
             when {
-                expression { params.test == 2 }   
+                expression { params.test == 1 }   
             }
             steps {
                 echo 'hello world'
