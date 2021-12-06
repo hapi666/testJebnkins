@@ -9,6 +9,9 @@ pipeline {
     }
     stages {
         stage('init') {
+            when {
+                expression { params.test == 2 }   
+            }
             steps {
                 echo 'hello world'
                 sh 'go env'   
